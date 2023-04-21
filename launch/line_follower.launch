@@ -1,0 +1,36 @@
+<launch>
+    <arg name="sim" default="false"/>
+    <arg name="rec" default="false"/>
+    <arg name="x" default="0.025"/>
+    <arg name="y" default="0"/>
+    <arg name="z" default="0"/>  
+    <arg name="roll" default="0"/>
+    <arg name="pitch" default="0"/>
+    <arg name="yaw" default="1.570796"/>  
+    
+    <!-- Line follower node -->
+    <node pkg="line_follower" name="line_follower" type="follower.py" cwd="node" output="screen"></node>
+
+    <!-- Simulation world and node -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" if="$(arg sim)">
+        <arg name = "world_name" value =  "$(find line_follower)/world/world.world"/>
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>
+
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_burger_for_autorace.urdf.xacro" if="$(arg sim)"/>
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model autorace -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw) -param robot_description" if="$(arg sim)"/>
+    
+    <!-- RQT image view related to line follower topic -->
+    <node pkg="rqt_image_view" type="rqt_image_view" name="rqt_image_view" args="/line_follower"/>
+
+    <!-- Recording node -->
+    <node pkg="image_view" type="video_recorder" name="video_recorder" output="screen" if="$(arg rec)">
+        <remap from="image" to="/camera/image"/>
+        <param name="filename" value="$(find line_follower)/data/videos/follower.avi"/>
+        <param name="fps" value="30"/>
+    </node>
+</launch>

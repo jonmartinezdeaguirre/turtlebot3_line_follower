@@ -1,0 +1,831 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='path'>
+    <pose>3.95386 3.60951 0 0 -0 0</pose>
+    <link name='Line_11'>
+      <collision name='Line_11_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>2.5 0.05 0</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0015 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_11_Visual'>
+        <pose>0 0 0.0015 0 -0 0</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>2.5 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-3.96386 -2.42451 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Line_13'>
+      <collision name='Line_13_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>1.40411 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_13_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.40411 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-3.48386 -0.722009 0 0 -0 0.782787</pose>
+    </link>
+    <link name='Line_14'>
+      <collision name='Line_14_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.65 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_14_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.65 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-2.70386 -0.244509 0 0 -0 0</pose>
+    </link>
+    <link name='Line_20'>
+      <collision name='Line_20_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.645529 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_20_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.645529 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-2.14686 -0.394509 0 0 -0 -0.528316</pose>
+    </link>
+    <link name='Line_21'>
+      <collision name='Line_21_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.650446 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_21_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650446 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-1.81186 -0.834509 0 0 -0 -1.30805</pose>
+    </link>
+    <link name='Line_22'>
+      <collision name='Line_22_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.649508 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_22_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.649508 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-1.44436 -1.20201 0 0 -0 -0.26157</pose>
+    </link>
+    <link name='Line_23'>
+      <collision name='Line_23_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>4.65006 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_23_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>4.65006 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>1.14514 -1.27951 0 0 -0 0</pose>
+    </link>
+    <link name='Line_24'>
+      <collision name='Line_24_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.649922 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_24_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.649922 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>3.70514 -1.12951 0 0 -0 0.523278</pose>
+    </link>
+    <link name='Line_25'>
+      <collision name='Line_25_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.399747 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_25_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.399747 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>3.96514 -0.804509 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Line_26'>
+      <collision name='Line_26_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.899747 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_26_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.899747 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>3.96514 -0.204509 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Line_27'>
+      <collision name='Line_27_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.650158 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_27_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650158 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>3.70514 0.370491 0 0 -0 2.61831</pose>
+    </link>
+    <link name='Line_28'>
+      <collision name='Line_28_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>1.89988 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_28_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.89988 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>2.55164 0.759991 0 0 -0 2.8797</pose>
+    </link>
+    <link name='Line_29'>
+      <collision name='Line_29_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.649797 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_29_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.649797 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>1.36864 1.07699 0 0 -0 2.88002</pose>
+    </link>
+    <link name='Line_30'>
+      <collision name='Line_30_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>3.92046 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_30_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>3.92046 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-0.855858 1.15449 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Line_31'>
+      <collision name='Line_31_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.747857 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_31_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.747857 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-3.12586 1.25199 0 0 -0 2.85837</pose>
+    </link>
+    <link name='Line_32'>
+      <collision name='Line_32_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.489276 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_32_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.489276 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-3.55986 1.54549 0 0 -0 2.03852</pose>
+    </link>
+    <link name='Line_35'>
+      <collision name='Line_35_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.400442 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_35_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400442 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-3.61336 1.91049 0 0 -0 1.3078</pose>
+    </link>
+    <link name='Line_36'>
+      <collision name='Line_36_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.650309 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_36_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.650309 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-3.35586 2.29199 0 0 -0 0.786576</pose>
+    </link>
+    <link name='Line_37'>
+      <collision name='Line_37_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.900194 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_37_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.900194 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-2.73336 2.61449 0 0 -0 0.261815</pose>
+    </link>
+    <link name='Line_38'>
+      <collision name='Line_38_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>1.90032 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_38_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.90032 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-1.39786 2.72449 0 0 -0 0</pose>
+    </link>
+    <link name='Line_39'>
+      <collision name='Line_39_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.400228 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_39_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400228 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>-0.303858 2.76949 0 0 -0 0.260234</pose>
+    </link>
+    <link name='Line_40'>
+      <collision name='Line_40_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.400475 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_40_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400475 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>0.017142 2.90199 0 0 -0 0.522329</pose>
+    </link>
+    <link name='Line_41'>
+      <collision name='Line_41_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.416231 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_41_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.416231 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>0.266642 3.14449 0 0 -0 1.0093</pose>
+    </link>
+    <link name='Line_42'>
+      <collision name='Line_42_Collision'>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.400038 0.05 0.001</size>
+          </plane>
+        </geometry>
+        <pose>0 0 0.0005 0 -0 0</pose>
+      <surface>
+          <friction>
+            <ode>
+             <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='Line_42_Visual'>
+        <pose>0 0 0.0005 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.400038 0.05 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <pose>0.364142 3.47449 0 0 -0 1.5708</pose>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>
