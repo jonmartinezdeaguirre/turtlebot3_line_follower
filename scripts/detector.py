@@ -3,7 +3,6 @@
 # Python packages
 import cv2
 import numpy as np
-import pandas as pd
 
 # ROS packages (python)
 import rospy
@@ -14,19 +13,12 @@ from sensor_msgs.msg import Image
 
 class LineDetector:
     def __init__(self):
+        self.video_data = []
+        self.video_writer = cv2.VideoWriter('../recordings/detection.avi', cv2.VideoWriter_fourcc(*'DIVX'), 30, (320, 240))
         self.bridge = CvBridge()
 
         self.detection = Image()
         self.publisher = rospy.Publisher('line_follower', Image, queue_size=1)
-
-    def test(self, image, color):
-        self.image = image
-        self.blurred = cv2.GaussianBlur(self.image, ksize=(3, 3), sigmaX=.1, sigmaY=.1)
-        self.blurred_hsv = cv2.cvtColor(self.blurred, cv2.COLOR_BGR2HSV)
-
-        self.height, self.width, _ = self.image.shape
-
-        self.get_direction(line_color=color)
 
     def read_image(self, message: Image):
         '''
@@ -42,7 +34,7 @@ class LineDetector:
         self.image = self.bridge.imgmsg_to_cv2(message, desired_encoding='bgr8')
         self.blurred = cv2.GaussianBlur(self.image, ksize=(3, 3), sigmaX=.1, sigmaY=.1)
         self.blurred_hsv = cv2.cvtColor(self.blurred, cv2.COLOR_BGR2HSV)
-
+        
         self.height, self.width, _ = self.image.shape
 
     def get_direction(self, message=None, line_color='red', tol=10):
@@ -97,11 +89,15 @@ class LineDetector:
             self.detection = self.bridge.cv2_to_imgmsg(self.image, encoding='bgr8')
             self.publisher.publish(self.detection)
 
+            self.video_data.append(self.image)
+
         except ZeroDivisionError:
             cv2.putText(self.image, '[WARNING] No line found', (int(self.width/5), 20), cv2.FONT_HERSHEY_DUPLEX, .5, (0, 0, 255))
             
             self.detection = self.bridge.cv2_to_imgmsg(self.image, encoding='bgr8')
             self.publisher.publish(self.detection)
+
+            self.video_data.append(self.image)
 
             rospy.logwarn('No line found')
             return 0
