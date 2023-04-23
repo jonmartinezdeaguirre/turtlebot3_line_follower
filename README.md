@@ -38,5 +38,5 @@ In order to perform the simulation, a maze-like world was created. This world co
 <br>
 
 <p align="center">
-  <img width="50%" src="./assets/world.png"/>
+  <img width="60%" src="./assets/world.png"/>
 </p>
