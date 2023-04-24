@@ -9,11 +9,11 @@
     <arg name="yaw" default="1.570796"/>  
     
     <!-- Line follower node -->
-    <node pkg="line_follower" name="line_follower" type="follower.py" cwd="node" output="screen"></node>
+    <node pkg="turtlebot3_line_follower" name="line_follower" type="follower.py" cwd="node" output="screen"></node>
 
     <!-- Simulation world and node -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch" if="$(arg sim)">
-        <arg name = "world_name" value =  "$(find line_follower)/world/world.world"/>
+        <arg name = "world_name" value =  "$(find turtlebot3_line_follower)/world/world.world"/>
         <arg name="paused" value="false"/>
         <arg name="use_sim_time" value="true"/>
         <arg name="gui" value="true"/>
@@ -30,7 +30,7 @@
     <!-- Recording node -->
     <node pkg="image_view" type="video_recorder" name="video_recorder" output="screen" if="$(arg rec)">
         <remap from="image" to="/camera/image"/>
-        <param name="filename" value="$(find line_follower)/data/videos/follower.avi"/>
+        <param name="filename" value="$(find turtlebot3_line_follower)/data/videos/follower.avi"/>
         <param name="fps" value="30"/>
     </node>
 </launch>
